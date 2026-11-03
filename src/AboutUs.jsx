@@ -1,8 +1,9 @@
+
 import React from "react";
 
 function AboutUs() {
   return (
-    <section className="about-section">
+    <div className="about-us-container">
       <h1>About Paradise Nursery</h1>
 
       <p>
@@ -23,10 +24,10 @@ function AboutUs() {
 
       <h2>Our Mission</h2>
       <p>
-        Our mission is to encourage people to live greener lives
-        by making quality plants accessible to everyone.
+        Our mission is to provide high-quality plants and help
+        everyone create a greener and healthier living space.
       </p>
-    </section>
+    </div>
   );
 }
 
