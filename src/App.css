@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f1;
+  color: #263b28;
+}
+
+.landing-page {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+.landing-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.landing-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+.navbar {
+  background: #1b5e20;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar button {
+  margin-left: 10px;
+  background: white;
+  color: #1b5e20;
+}
+
+.page-container {
+  padding: 35px;
+}
+
+.about-section {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  line-height: 1.8;
+}
+
+.about-section h1,
+.about-section h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  margin-bottom: 15px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 12px 0;
+}
+
+.product-card p {
+  margin-bottom: 12px;
+}
+
+.category-title {
+  margin-top: 30px;
+  color: #2e7d32;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-total {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+  .landing-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-container {
+    padding: 18px;
+  }
+}
