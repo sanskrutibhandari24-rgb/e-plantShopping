@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,25 @@ body {
   color: #263b28;
 }
 
+/* Required background image class for Coursera */
+.background-image {
+  min-height: 100vh;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+/* Keep compatibility with existing landing page */
 .landing-page {
   min-height: 100vh;
   background-image:
@@ -70,7 +90,7 @@ button:hover {
   padding: 35px;
 }
 
-.about-section {
+.about-us-container {
   max-width: 850px;
   margin: 40px auto;
   padding: 30px;
@@ -79,13 +99,13 @@ button:hover {
   line-height: 1.8;
 }
 
-.about-section h1,
-.about-section h2 {
+.about-us-container h1,
+.about-us-container h2 {
   color: #2e7d32;
   margin-bottom: 15px;
 }
 
-.about-section p {
+.about-us-container p {
   margin-bottom: 15px;
 }
 
