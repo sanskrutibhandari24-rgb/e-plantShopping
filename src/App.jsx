@@ -61,8 +61,9 @@ function App() {
 
       {showProductList && page === "products" && <ProductList />}
 
-      {page === "cart" && <CartItem />}
-
+      {page === "cart" && (
+  <CartItem onContinueShopping={() => setPage("products")} />
+)}
       {page === "about" && <AboutUs />}
     </>
   );
